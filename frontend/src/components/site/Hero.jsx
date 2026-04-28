@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
 
 const HERO_IMAGE =
-  "https://customer-assets.emergentagent.com/job_note-landing/artifacts/lo5qjlss_WhatsApp%20Image%202026-04-28%20at%2023.05.44.jpeg";
+  "https://customer-assets.emergentagent.com/job_006e9fe6-7cc9-4d12-be84-af7ad4c21208/artifacts/4ta4xjyk_Screenshot%202026-04-28%20224222.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -97,8 +97,8 @@ export default function Hero() {
             </div>
             <img
               src={HERO_IMAGE}
-              alt="Trupa Note În Demisol pe scenă"
-              className="w-full aspect-[4/5] object-cover grayscale-[0.15] mix-blend-multiply"
+              alt="Logo Note În Demisol"
+              className="w-full aspect-square object-contain p-8 md:p-12 bg-[hsl(var(--secondary))]"
             />
             <div className="grid grid-cols-3 border-t border-[hsl(215_50%_16%/0.25)] text-xs">
               <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
