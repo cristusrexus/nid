@@ -42,34 +42,14 @@ export default function About() {
             care le coordonăm.
           </p>
 
-          <div
-            className="mt-8 border border-[hsl(215_50%_16%/0.18)] bg-[hsl(var(--secondary))] p-5 md:p-6 flex items-start gap-4"
-            data-testid="about-coordinator"
-          >
-            <div className="hidden sm:flex items-center justify-center w-12 h-12 border border-[hsl(215_50%_16%/0.25)] font-display text-xl">
-              AC
-            </div>
-            <div>
-              <div className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[hsl(var(--accent))] mb-1">
-                Coordonator
-              </div>
-              <div className="font-display text-xl md:text-2xl leading-tight">
-                Alex Czirai
-              </div>
-              <div className="text-sm text-[hsl(215_30%_30%)] mt-1">
-                Profesor de chitară · Coordonator Note În Demisol
-              </div>
-            </div>
-          </div>
-
           <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
             <img
-              src="https://customer-assets.emergentagent.com/job_note-landing/artifacts/4x9ew07y_WhatsApp%20Image%202026-04-28%20at%2023.05.44%20%281%29.jpeg"
-              alt="Membrii trupei Note În Demisol cântând împreună în Beclean"
+              src="https://customer-assets.emergentagent.com/job_note-landing/artifacts/galt9biz_Screenshot%202026-04-28%20231458.png"
+              alt="Note În Demisol pe scenă la 790 de ani de la prima atestare a Beclanului"
               className="w-full aspect-[16/10] object-cover"
             />
             <div className="px-5 py-3 border-t border-[hsl(215_50%_16%/0.18)] flex items-center justify-between text-[10px] uppercase tracking-[0.25em] font-semibold bg-[hsl(var(--secondary))]">
-              <span>Concert în Beclean</span>
+              <span>790 de ani Beclean · pe scenă</span>
               <span className="text-[hsl(var(--accent))]">2024</span>
             </div>
           </div>

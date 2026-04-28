@@ -18,10 +18,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-sm text-[hsl(215_30%_28%)] md:text-center max-w-sm md:mx-auto">
-          Coordonator: Alex Czirai
+          Trupă din Beclean, Bistrița-Năsăud.
           <br />
           <span className="text-[10px] uppercase tracking-[0.25em] text-[hsl(215_30%_45%)]">
-            Profesor de chitară
+            Folk · Acustic · Concerte locale
           </span>
         </div>
         <div className="text-xs uppercase tracking-[0.22em] text-[hsl(215_30%_35%)] md:text-right">

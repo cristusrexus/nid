@@ -7,7 +7,7 @@ const products = [
     name: "Tricou Note În Demisol",
     price: "120 LEI",
     tag: "Bumbac 100%",
-    img: "https://images.pexels.com/photos/12025472/pexels-photo-12025472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    img: "https://customer-assets.emergentagent.com/job_note-landing/artifacts/xqd4gyry_Screenshot%202026-04-28%20231601.png",
   },
   {
     id: "hoodie-folk",

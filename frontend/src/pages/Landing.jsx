@@ -2,6 +2,7 @@ import Navbar from "../components/site/Navbar";
 import Hero from "../components/site/Hero";
 import Ribbon from "../components/site/Ribbon";
 import About from "../components/site/About";
+import Gallery from "../components/site/Gallery";
 import Merch from "../components/site/Merch";
 import ContactSection from "../components/site/ContactSection";
 import Footer from "../components/site/Footer";
@@ -14,6 +15,7 @@ export default function Landing() {
         <Hero />
         <Ribbon />
         <About />
+        <Gallery />
         <Merch />
         <ContactSection />
       </main>
