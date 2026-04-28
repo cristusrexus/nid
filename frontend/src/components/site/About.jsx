@@ -27,8 +27,7 @@ export default function About() {
             className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight"
             data-testid="about-title"
           >
-            O trupă <em className="italic">mare</em>, un{" "}
-            <span className="text-[hsl(var(--accent))]">demisol</span> mic.
+            O trupă din <span className="text-[hsl(var(--accent))]">Beclean</span>, în <em className="italic">demisol</em>.
           </h2>
         </div>
 
@@ -38,20 +37,30 @@ export default function About() {
             data-testid="about-paragraph-1"
           >
             <span className="font-display text-3xl mr-2 float-left leading-none mt-1">N</span>
-            ote În Demisol s-a născut în 2024, în Beclean, din dorința simplă de a
-            face muzică împreună. Astăzi suntem peste 70 de oameni — elevi,
-            prieteni, profesori și grupe de chitară — adunați acolo unde acustica
-            e cea mai sinceră: în demisol.
+            ote În Demisol a început în 2024, în Beclean. Suntem peste 70 de
+            membri, între care elevi, profesori și mai multe grupe de chitară pe
+            care le coordonăm.
           </p>
-          <p
-            className="text-base md:text-lg leading-relaxed text-[hsl(215_30%_28%)]"
-            data-testid="about-paragraph-2"
+
+          <div
+            className="mt-8 border border-[hsl(215_50%_16%/0.18)] bg-[hsl(var(--secondary))] p-5 md:p-6 flex items-start gap-4"
+            data-testid="about-coordinator"
           >
-            Cântăm preponderent piese folk — melodii care spun povești, refrene
-            care se țin minte, chitare care respiră — dar lăsăm loc și
-            tendințelor noastre rock. Pentru că uneori, o baladă cere un riff
-            sincer.
-          </p>
+            <div className="hidden sm:flex items-center justify-center w-12 h-12 border border-[hsl(215_50%_16%/0.25)] font-display text-xl">
+              AC
+            </div>
+            <div>
+              <div className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[hsl(var(--accent))] mb-1">
+                Coordonator
+              </div>
+              <div className="font-display text-xl md:text-2xl leading-tight">
+                Alex Czirai
+              </div>
+              <div className="text-sm text-[hsl(215_30%_30%)] mt-1">
+                Profesor de chitară · Coordonator Note În Demisol
+              </div>
+            </div>
+          </div>
 
           <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
             <img

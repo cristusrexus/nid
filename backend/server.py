@@ -5,7 +5,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, EmailStr, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
@@ -32,7 +32,6 @@ class LessonSignup(BaseModel):
     model_config = ConfigDict(extra="ignore")
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     full_name: str
-    email: EmailStr
     phone: str
     experience: str  # "incepator" | "mediu" | "avansat"
     message: Optional[str] = ""
@@ -41,7 +40,6 @@ class LessonSignup(BaseModel):
 
 class LessonSignupCreate(BaseModel):
     full_name: str = Field(min_length=2, max_length=100)
-    email: EmailStr
     phone: str = Field(min_length=4, max_length=30)
     experience: str
     message: Optional[str] = ""
@@ -51,7 +49,7 @@ class ContactMessage(BaseModel):
     model_config = ConfigDict(extra="ignore")
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     name: str
-    email: EmailStr
+    phone: str
     subject: str
     message: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
@@ -59,7 +57,7 @@ class ContactMessage(BaseModel):
 
 class ContactMessageCreate(BaseModel):
     name: str = Field(min_length=2, max_length=100)
-    email: EmailStr
+    phone: str = Field(min_length=4, max_length=30)
     subject: str = Field(min_length=2, max_length=200)
     message: str = Field(min_length=2, max_length=2000)
 
@@ -79,7 +77,7 @@ async def create_lesson_signup(payload: LessonSignupCreate):
     doc = obj.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     await db.lesson_signups.insert_one(doc)
-    logger.info(f"New lesson signup: {obj.email} ({obj.full_name})")
+    logger.info(f"New lesson signup: {obj.full_name} ({obj.phone})")
     return obj
 
 
@@ -98,7 +96,7 @@ async def create_contact_message(payload: ContactMessageCreate):
     doc = obj.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     await db.contact_messages.insert_one(doc)
-    logger.info(f"New contact message from: {obj.email}")
+    logger.info(f"New contact message from: {obj.name} ({obj.phone})")
     return obj
 
 

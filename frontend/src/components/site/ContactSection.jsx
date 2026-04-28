@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Phone, MapPin, Send } from "lucide-react";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -10,10 +10,9 @@ const API = `${BACKEND_URL}/api`;
 const GUITAR_IMG =
   "https://images.pexels.com/photos/10587476/pexels-photo-10587476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
 
-const initialContact = { name: "", email: "", subject: "", message: "" };
+const initialContact = { name: "", phone: "", subject: "", message: "" };
 const initialLessons = {
   full_name: "",
-  email: "",
   phone: "",
   experience: "incepator",
   message: "",
@@ -111,13 +110,13 @@ export default function ContactSection() {
                   data-testid="contact-name-input"
                 />
                 <input
-                  type="email"
+                  type="tel"
                   required
-                  placeholder="Email"
-                  value={contact.email}
-                  onChange={(e) => setContact({ ...contact, email: e.target.value })}
+                  placeholder="Telefon"
+                  value={contact.phone}
+                  onChange={(e) => setContact({ ...contact, phone: e.target.value })}
                   className="editorial-input"
-                  data-testid="contact-email-input"
+                  data-testid="contact-phone-input"
                 />
               </div>
               <input
@@ -149,14 +148,7 @@ export default function ContactSection() {
               </button>
             </form>
 
-            <div className="mt-12 pt-8 border-t border-[hsl(215_50%_16%/0.18)] grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
-              <div className="flex items-start gap-3" data-testid="contact-info-email">
-                <Mail size={16} className="mt-1 text-[hsl(var(--accent))]" />
-                <div>
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(215_30%_35%)]">Email</div>
-                  <div>contact@noteindemisol.ro</div>
-                </div>
-              </div>
+            <div className="mt-12 pt-8 border-t border-[hsl(215_50%_16%/0.18)] grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
               <div className="flex items-start gap-3" data-testid="contact-info-phone">
                 <Phone size={16} className="mt-1 text-[hsl(var(--accent))]" />
                 <div>
@@ -205,8 +197,8 @@ export default function ContactSection() {
                 Înscrie-te la lecții
               </h3>
               <p className="text-sm md:text-base text-[hsl(44_28%_85%)] max-w-md mb-8">
-                Începători sau avansați — învățăm împreună, în atmosfera caldă din
-                demisol. Lasă datele tale și revenim cu o programare.
+                Începători sau avansați. Lasă-ne numele și telefonul tău și te
+                contactăm pentru o programare.
               </p>
 
               <form onSubmit={submitLessons} className="space-y-6" data-testid="lessons-form">
@@ -219,26 +211,15 @@ export default function ContactSection() {
                   className="editorial-input !text-[hsl(var(--primary-foreground))] !border-[hsl(44_28%_85%/0.4)] placeholder:!text-[hsl(44_28%_85%/0.6)] focus:!border-[hsl(var(--accent))]"
                   data-testid="lessons-fullname-input"
                 />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <input
-                    type="email"
-                    required
-                    placeholder="Email"
-                    value={lessons.email}
-                    onChange={(e) => setLessons({ ...lessons, email: e.target.value })}
-                    className="editorial-input !text-[hsl(var(--primary-foreground))] !border-[hsl(44_28%_85%/0.4)] placeholder:!text-[hsl(44_28%_85%/0.6)] focus:!border-[hsl(var(--accent))]"
-                    data-testid="lessons-email-input"
-                  />
-                  <input
-                    type="tel"
-                    required
-                    placeholder="Telefon"
-                    value={lessons.phone}
-                    onChange={(e) => setLessons({ ...lessons, phone: e.target.value })}
-                    className="editorial-input !text-[hsl(var(--primary-foreground))] !border-[hsl(44_28%_85%/0.4)] placeholder:!text-[hsl(44_28%_85%/0.6)] focus:!border-[hsl(var(--accent))]"
-                    data-testid="lessons-phone-input"
-                  />
-                </div>
+                <input
+                  type="tel"
+                  required
+                  placeholder="Telefon"
+                  value={lessons.phone}
+                  onChange={(e) => setLessons({ ...lessons, phone: e.target.value })}
+                  className="editorial-input !text-[hsl(var(--primary-foreground))] !border-[hsl(44_28%_85%/0.4)] placeholder:!text-[hsl(44_28%_85%/0.6)] focus:!border-[hsl(var(--accent))]"
+                  data-testid="lessons-phone-input"
+                />
                 <div>
                   <label className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[hsl(44_28%_85%)] block mb-3">
                     Nivel

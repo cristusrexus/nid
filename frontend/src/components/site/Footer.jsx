@@ -18,7 +18,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-sm text-[hsl(215_30%_28%)] md:text-center max-w-sm md:mx-auto">
-          „Coboară cu noi în demisol — acolo unde acordurile sunt mai sincere.”
+          Coordonator: Alex Czirai
+          <br />
+          <span className="text-[10px] uppercase tracking-[0.25em] text-[hsl(215_30%_45%)]">
+            Profesor de chitară
+          </span>
         </div>
         <div className="text-xs uppercase tracking-[0.22em] text-[hsl(215_30%_35%)] md:text-right">
           © {new Date().getFullYear()} Note În Demisol

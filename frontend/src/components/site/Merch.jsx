@@ -58,8 +58,7 @@ export default function Merch() {
           </h2>
         </div>
         <p className="text-base md:text-lg max-w-md text-[hsl(215_30%_30%)]">
-          Mici obiecte tipărite cu drag în tiraj limitat. Pentru comenzi, scrie-ne
-          pe formularul de contact.
+          Pentru comenzi sau întrebări, scrie-ne pe formularul de contact.
         </p>
       </div>
 

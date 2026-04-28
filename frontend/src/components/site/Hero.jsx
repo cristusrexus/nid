@@ -55,8 +55,8 @@ export default function Hero() {
             className="mt-8 max-w-xl text-lg md:text-xl text-[hsl(215_30%_28%)] leading-relaxed"
             data-testid="hero-description"
           >
-            Peste 70 de voci și chitare din Beclean, unite de aceeași pasiune —
-            de la balade folk la riff-uri de rock. Coboară cu noi în demisol.
+            Suntem peste 70 de oameni din Beclean care cântă împreună la chitară.
+            Coboară cu noi în demisol.
           </motion.p>
 
           <motion.div
@@ -93,7 +93,7 @@ export default function Hero() {
         >
           <div className="relative border border-[hsl(215_50%_16%/0.25)] bg-[hsl(var(--secondary))]">
             <div className="absolute -top-3 left-6 bg-background px-3 py-1 text-[10px] uppercase tracking-[0.3em] font-bold text-[hsl(var(--accent))]">
-              Vol. 01 — Folk Sessions
+              Note În Demisol
             </div>
             <img
               src={HERO_IMAGE}
@@ -114,9 +114,9 @@ export default function Hero() {
                 </div>
               </div>
               <div className="p-4">
-                <div className="font-display text-2xl">∞</div>
+                <div className="font-display text-2xl">BN</div>
                 <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
-                  Acorduri
+                  Bistrița-Năsăud
                 </div>
               </div>
             </div>
