@@ -1,0 +1,128 @@
+import { motion } from "framer-motion";
+import { ArrowDownRight } from "lucide-react";
+
+const HERO_IMAGE =
+  "https://images.pexels.com/photos/33284931/pexels-photo-33284931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 },
+  }),
+};
+
+export default function Hero() {
+  return (
+    <section
+      className="container-x pt-12 md:pt-20 pb-16 md:pb-24"
+      data-testid="hero-section"
+    >
+      <div className="grid grid-cols-12 gap-6 lg:gap-10 items-center">
+        {/* Left: text */}
+        <div className="col-span-12 lg:col-span-7">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            custom={0}
+            className="overline mb-8"
+            data-testid="hero-overline"
+          >
+            <span className="stamp-tag">Trupă folk · est. 2024</span>
+          </motion.div>
+
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            custom={1}
+            className="font-display text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.9] tracking-tighter text-balance"
+            data-testid="hero-title"
+          >
+            Bun venit la{" "}
+            <span className="italic">Note</span>
+            <span className="text-[hsl(var(--accent))]"> În </span>
+            <span className="italic">Demisol</span>
+          </motion.h1>
+
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            custom={2}
+            className="mt-8 max-w-xl text-lg md:text-xl text-[hsl(215_30%_28%)] leading-relaxed"
+            data-testid="hero-description"
+          >
+            Treizeci și șase de voci, șase corzi de chitară și o pasiune comună —
+            de la balade folk la riff-uri de rock. Coboară cu noi în demisol.
+          </motion.p>
+
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            custom={3}
+            className="mt-10 flex flex-wrap items-center gap-4"
+          >
+            <a
+              href="#lectii"
+              className="btn-primary"
+              data-testid="hero-lessons-cta"
+            >
+              Înscriere Lecții
+            </a>
+            <a
+              href="#despre"
+              className="btn-outline"
+              data-testid="hero-about-cta"
+            >
+              Cine Suntem <ArrowDownRight size={16} className="ml-2" />
+            </a>
+          </motion.div>
+        </div>
+
+        {/* Right: image card */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
+          className="col-span-12 lg:col-span-5"
+          data-testid="hero-image-wrap"
+        >
+          <div className="relative border border-[hsl(215_50%_16%/0.25)] bg-[hsl(var(--secondary))]">
+            <div className="absolute -top-3 left-6 bg-background px-3 py-1 text-[10px] uppercase tracking-[0.3em] font-bold text-[hsl(var(--accent))]">
+              Vol. 01 — Folk Sessions
+            </div>
+            <img
+              src={HERO_IMAGE}
+              alt="Trupa Note În Demisol pe scenă"
+              className="w-full aspect-[4/5] object-cover grayscale-[0.15] mix-blend-multiply"
+            />
+            <div className="grid grid-cols-3 border-t border-[hsl(215_50%_16%/0.25)] text-xs">
+              <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
+                <div className="font-display text-2xl">36</div>
+                <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
+                  Membri
+                </div>
+              </div>
+              <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
+                <div className="font-display text-2xl">2024</div>
+                <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
+                  Înființată
+                </div>
+              </div>
+              <div className="p-4">
+                <div className="font-display text-2xl">∞</div>
+                <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
+                  Acorduri
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
