@@ -38,9 +38,10 @@ export default function About() {
             data-testid="about-paragraph-1"
           >
             <span className="font-display text-3xl mr-2 float-left leading-none mt-1">N</span>
-            ote În Demisol s-a născut în 2024 din dorința simplă de a face muzică
-            împreună. Suntem 36 de oameni — colegi, prieteni, vecini de corzi —
-            care ne adunăm acolo unde acustica e cea mai sinceră: în demisol.
+            ote În Demisol s-a născut în 2024, în Beclean, din dorința simplă de a
+            face muzică împreună. Astăzi suntem peste 70 de oameni — elevi,
+            prieteni, profesori și grupe de chitară — adunați acolo unde acustica
+            e cea mai sinceră: în demisol.
           </p>
           <p
             className="text-base md:text-lg leading-relaxed text-[hsl(215_30%_28%)]"
@@ -52,14 +53,26 @@ export default function About() {
             sincer.
           </p>
 
+          <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
+            <img
+              src="https://customer-assets.emergentagent.com/job_note-landing/artifacts/4x9ew07y_WhatsApp%20Image%202026-04-28%20at%2023.05.44%20%281%29.jpeg"
+              alt="Membrii trupei Note În Demisol cântând împreună în Beclean"
+              className="w-full aspect-[16/10] object-cover"
+            />
+            <div className="px-5 py-3 border-t border-[hsl(215_50%_16%/0.18)] flex items-center justify-between text-[10px] uppercase tracking-[0.25em] font-semibold bg-[hsl(var(--secondary))]">
+              <span>Concert în Beclean</span>
+              <span className="text-[hsl(var(--accent))]">2024</span>
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-[hsl(215_50%_16%/0.18)] border border-[hsl(215_50%_16%/0.18)] mt-10">
             {[
-              { k: "36", v: "Membri activi" },
+              { k: "70+", v: "Membri activi" },
               { k: "2024", v: "Anul înființării" },
               { k: "FOLK", v: "Stil principal" },
               { k: "ROCK", v: "Tendință" },
-              { k: "DEMISOL", v: "Sala noastră" },
-              { k: "RO", v: "Repertoriu" },
+              { k: "BECLEAN", v: "Orașul nostru" },
+              { k: "BN", v: "Bistrița-Năsăud" },
             ].map((s) => (
               <div
                 key={s.k}

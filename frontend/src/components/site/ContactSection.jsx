@@ -161,14 +161,16 @@ export default function ContactSection() {
                 <Phone size={16} className="mt-1 text-[hsl(var(--accent))]" />
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(215_30%_35%)]">Telefon</div>
-                  <div>+40 700 000 000</div>
+                  <a href="tel:+40757779762" className="hover:text-[hsl(var(--accent))] transition-colors">
+                    0757 779 762
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-3" data-testid="contact-info-location">
                 <MapPin size={16} className="mt-1 text-[hsl(var(--accent))]" />
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(215_30%_35%)]">Locație</div>
-                  <div>București, RO</div>
+                  <div>Beclean, Bistrița-Năsăud</div>
                 </div>
               </div>
             </div>

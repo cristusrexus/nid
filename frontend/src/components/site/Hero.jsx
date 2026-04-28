@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
 
 const HERO_IMAGE =
-  "https://images.pexels.com/photos/33284931/pexels-photo-33284931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+  "https://customer-assets.emergentagent.com/job_note-landing/artifacts/lo5qjlss_WhatsApp%20Image%202026-04-28%20at%2023.05.44.jpeg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -55,7 +55,7 @@ export default function Hero() {
             className="mt-8 max-w-xl text-lg md:text-xl text-[hsl(215_30%_28%)] leading-relaxed"
             data-testid="hero-description"
           >
-            Treizeci și șase de voci, șase corzi de chitară și o pasiune comună —
+            Peste 70 de voci și chitare din Beclean, unite de aceeași pasiune —
             de la balade folk la riff-uri de rock. Coboară cu noi în demisol.
           </motion.p>
 
@@ -102,7 +102,7 @@ export default function Hero() {
             />
             <div className="grid grid-cols-3 border-t border-[hsl(215_50%_16%/0.25)] text-xs">
               <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
-                <div className="font-display text-2xl">36</div>
+                <div className="font-display text-2xl">70+</div>
                 <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
                   Membri
                 </div>

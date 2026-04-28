@@ -3,9 +3,9 @@ import Marquee from "react-fast-marquee";
 const items = [
   "Note În Demisol",
   "Trupă Folk-Rock",
+  "Beclean · Bistrița-Năsăud",
   "Înființată 2024",
-  "36 Membri",
-  "Acorduri În Demisol",
+  "70+ Membri",
   "Folk · Rock · Cover",
 ];
 
