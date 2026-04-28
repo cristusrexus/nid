@@ -54,12 +54,10 @@ export default function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-[hsl(215_50%_16%/0.18)] border border-[hsl(215_50%_16%/0.18)] mt-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(215_50%_16%/0.18)] border border-[hsl(215_50%_16%/0.18)] mt-10">
             {[
               { k: "70+", v: "Membri activi" },
               { k: "2024", v: "Anul înființării" },
-              { k: "FOLK", v: "Stil principal" },
-              { k: "ROCK", v: "Tendință" },
               { k: "BECLEAN", v: "Orașul nostru" },
               { k: "BN", v: "Bistrița-Năsăud" },
             ].map((s) => (
