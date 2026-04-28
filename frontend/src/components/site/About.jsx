@@ -49,8 +49,8 @@ export default function About() {
               className="w-full aspect-[16/10] object-cover"
             />
             <div className="px-5 py-3 border-t border-[hsl(215_50%_16%/0.18)] flex items-center justify-between text-[10px] uppercase tracking-[0.25em] font-semibold bg-[hsl(var(--secondary))]">
-              <span>790 de ani Beclean · pe scenă</span>
-              <span className="text-[hsl(var(--accent))]">2024</span>
+              <span>Zilele Becleanului · pe scenă</span>
+              <span className="text-[hsl(var(--accent))]">27 septembrie 2025</span>
             </div>
           </div>
 
