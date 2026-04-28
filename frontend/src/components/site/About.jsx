@@ -54,9 +54,8 @@ export default function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(215_50%_16%/0.18)] border border-[hsl(215_50%_16%/0.18)] mt-10">
+          <div className="grid grid-cols-3 gap-px bg-[hsl(215_50%_16%/0.18)] border border-[hsl(215_50%_16%/0.18)] mt-10">
             {[
-              { k: "70+", v: "Membri activi" },
               { k: "2024", v: "Anul înființării" },
               { k: "BECLEAN", v: "Orașul nostru" },
               { k: "BN", v: "Bistrița-Năsăud" },
@@ -66,7 +65,7 @@ export default function About() {
                 className="bg-background p-5 md:p-6"
                 data-testid={`about-stat-${s.k.toLowerCase()}`}
               >
-                <div className="font-display text-2xl md:text-3xl">{s.k}</div>
+                <div className="font-display text-xl md:text-2xl lg:text-3xl break-words">{s.k}</div>
                 <div className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-[hsl(215_30%_35%)] mt-1">
                   {s.v}
                 </div>
