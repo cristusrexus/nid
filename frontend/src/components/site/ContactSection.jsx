@@ -148,7 +148,16 @@ export default function ContactSection() {
               </button>
             </form>
 
-            <div className="mt-12 pt-8 border-t border-[hsl(215_50%_16%/0.18)] grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+            <div className="mt-12 pt-8 border-t border-[hsl(215_50%_16%/0.18)] grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+              <div className="flex items-start gap-3" data-testid="contact-info-email">
+                <Mail size={16} className="mt-1 text-[hsl(var(--accent))]" />
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[hsl(215_30%_35%)]">Email</div>
+                  <a href="mailto:alex@noteindemisol.ro" className="hover:text-[hsl(var(--accent))] transition-colors break-all">
+                    alex@noteindemisol.ro
+                  </a>
+                </div>
+              </div>
               <div className="flex items-start gap-3" data-testid="contact-info-phone">
                 <Phone size={16} className="mt-1 text-[hsl(var(--accent))]" />
                 <div>
