@@ -5,7 +5,6 @@ const items = [
   "Trupă Folk-Rock",
   "Beclean · Bistrița-Năsăud",
   "Înființată 2024",
-  "70+ Membri",
   "Folk · Rock · Cover",
 ];
 

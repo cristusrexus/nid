@@ -55,7 +55,7 @@ export default function Hero() {
             className="mt-8 max-w-xl text-lg md:text-xl text-[hsl(215_30%_28%)] leading-relaxed"
             data-testid="hero-description"
           >
-            Suntem peste 70 de oameni din Beclean care cântă împreună la chitară.
+            Suntem o trupă din Beclean care cântă împreună la chitară.
             Coboară cu noi în demisol.
           </motion.p>
 
@@ -100,13 +100,7 @@ export default function Hero() {
               alt="Logo Note În Demisol"
               className="w-full aspect-square object-contain p-8 md:p-12 bg-[hsl(var(--secondary))]"
             />
-            <div className="grid grid-cols-3 border-t border-[hsl(215_50%_16%/0.25)] text-xs">
-              <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
-                <div className="font-display text-2xl">70+</div>
-                <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
-                  Membri
-                </div>
-              </div>
+            <div className="grid grid-cols-2 border-t border-[hsl(215_50%_16%/0.25)] text-xs">
               <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
                 <div className="font-display text-2xl">2024</div>
                 <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">

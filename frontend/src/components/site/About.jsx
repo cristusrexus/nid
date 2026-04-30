@@ -37,9 +37,8 @@ export default function About() {
             data-testid="about-paragraph-1"
           >
             <span className="font-display text-3xl mr-2 float-left leading-none mt-1">N</span>
-            ote În Demisol a început în 2024, în Beclean. Suntem peste 70 de
-            membri, între care elevi, profesori și mai multe grupe de chitară pe
-            care le coordonăm.
+            ote În Demisol a început în 2024, în Beclean. Suntem elevi,
+            profesori și mai multe grupe de chitară pe care le coordonăm.
           </p>
 
           <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
