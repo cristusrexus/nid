@@ -36,10 +36,12 @@ export default function About() {
             className="text-lg md:text-xl leading-relaxed text-[hsl(215_30%_25%)]"
             data-testid="about-paragraph-1"
           >
-            <span className="font-display text-3xl mr-2 float-left leading-none mt-1">O</span>
-            trupă tânără din Beclean, județul Bistrița-Năsăud, România. A fost
-            înființată în 2023 de Alex Czirai, care este și coordonatorul
-            trupei. Restul îl descoperi în demisol.
+            <span className="font-display text-3xl mr-2 float-left leading-none mt-1">N</span>
+            ote În Demisol este o trupă din Beclean, județul Bistrița-Năsăud,
+            înființată în 2023 de Alex Czirai, profesor de chitară și
+            coordonatorul trupei. Ne adunăm săptămânal în demisol pentru
+            repetiții, învățăm chitară împreună și urcăm pe scenă la evenimente
+            locale și concerte din împrejurimi.
           </p>
 
           <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
