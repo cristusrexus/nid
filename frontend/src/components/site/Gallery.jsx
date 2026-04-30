@@ -67,9 +67,6 @@ export default function Gallery() {
                 alt={img.caption}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
-              <figcaption className="absolute bottom-3 left-3 bg-background border border-[hsl(215_50%_16%/0.25)] px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] font-bold">
-                {img.caption}
-              </figcaption>
             </motion.figure>
           ))}
         </div>

@@ -50,8 +50,7 @@ export default function About() {
               alt="Note În Demisol pe scenă la 790 de ani de la prima atestare a Beclanului"
               className="w-full aspect-[16/10] object-cover"
             />
-            <div className="px-5 py-3 border-t border-[hsl(215_50%_16%/0.18)] flex items-center justify-between text-[10px] uppercase tracking-[0.25em] font-semibold bg-[hsl(var(--secondary))]">
-              <span>Zilele Becleanului · pe scenă</span>
+            <div className="px-5 py-3 border-t border-[hsl(215_50%_16%/0.18)] flex items-center justify-end text-[10px] uppercase tracking-[0.25em] font-semibold bg-[hsl(var(--secondary))]">
               <span className="text-[hsl(var(--accent))]">27 septembrie 2025</span>
             </div>
           </div>
