@@ -7,6 +7,7 @@ const LOGO_URL =
 const links = [
   { href: "#despre", label: "Despre noi", testid: "nav-about-link" },
   { href: "#galerie", label: "Galerie", testid: "nav-gallery-link" },
+  { href: "#social", label: "Social", testid: "nav-social-link" },
   { href: "#contact", label: "Contact", testid: "nav-contact-link" },
 ];
 
