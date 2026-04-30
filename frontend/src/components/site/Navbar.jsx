@@ -37,12 +37,7 @@ export default function Navbar() {
           data-testid="nav-logo-link"
           aria-label="Note În Demisol"
         >
-          <img
-            src={LOGO_URL}
-            alt="Note În Demisol Logo"
-            className="h-10 w-10 object-contain"
-          />
-          <span className="font-display text-xl tracking-tight hidden sm:block">
+          <span className="font-display text-xl tracking-tight">
             Note În Demisol
           </span>
         </a>
