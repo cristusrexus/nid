@@ -29,6 +29,20 @@ const images = [
     span: "md:col-span-1",
     aspect: "aspect-square",
   },
+  {
+    id: "scena-outdoor-conductor",
+    src: "https://customer-assets.emergentagent.com/job_note-landing/artifacts/wfi4simj_475249342_122207881382231204_90104098513928852_n.jpg",
+    caption: "Repetiție outdoor",
+    span: "md:col-span-2",
+    aspect: "aspect-[16/10]",
+  },
+  {
+    id: "strada-luminite",
+    src: "https://customer-assets.emergentagent.com/job_note-landing/artifacts/6j50z8vx_480267005_122212188992231204_8346872999877618742_n.jpg",
+    caption: "Concert pe stradă",
+    span: "md:col-span-2",
+    aspect: "aspect-[16/10]",
+  },
 ];
 
 export default function Gallery() {
