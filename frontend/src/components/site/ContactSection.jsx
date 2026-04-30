@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
 import { motion } from "framer-motion";
-import { Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
