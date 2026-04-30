@@ -61,7 +61,7 @@ export default function Gallery() {
             className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight max-w-2xl"
             data-testid="gallery-title"
           >
-            Momente din <em className="italic">demisol</em> și de pe scenă.
+            Iată momentele care ne țin <em className="italic">aproape</em>.
           </h2>
         </div>
 
