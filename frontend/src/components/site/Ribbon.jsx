@@ -4,7 +4,7 @@ const items = [
   "Note În Demisol",
   "Trupă Folk-Rock",
   "Beclean · Bistrița-Năsăud",
-  "Înființată 2024",
+  "Înființată 2023",
   "Folk · Rock · Cover",
 ];
 

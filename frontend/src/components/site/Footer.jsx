@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <div className="font-display text-xl">Note În Demisol</div>
             <div className="text-[10px] uppercase tracking-[0.25em] text-[hsl(215_30%_35%)] mt-1">
-              Trupă Folk · Est. 2024
+              Trupă Folk · Est. 2023
             </div>
           </div>
         </div>

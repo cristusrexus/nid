@@ -37,7 +37,7 @@ export default function About() {
             data-testid="about-paragraph-1"
           >
             <span className="font-display text-3xl mr-2 float-left leading-none mt-1">N</span>
-            ote În Demisol a început în 2024, în Beclean.
+            ote În Demisol a început în 2023, în Beclean.
           </p>
 
           <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
@@ -54,7 +54,7 @@ export default function About() {
 
           <div className="grid grid-cols-3 gap-px bg-[hsl(215_50%_16%/0.18)] border border-[hsl(215_50%_16%/0.18)] mt-10">
             {[
-              { k: "2024", v: "Anul înființării" },
+              { k: "2023", v: "Anul înființării" },
               { k: "BECLEAN", v: "Orașul nostru" },
               { k: "BN", v: "Bistrița-Năsăud" },
             ].map((s) => (

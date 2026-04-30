@@ -30,7 +30,7 @@ export default function Hero() {
             className="overline mb-8"
             data-testid="hero-overline"
           >
-            <span className="stamp-tag">Trupă folk · est. 2024</span>
+            <span className="stamp-tag">Trupă folk · est. 2023</span>
           </motion.div>
 
           <motion.h1
@@ -102,7 +102,7 @@ export default function Hero() {
             />
             <div className="grid grid-cols-2 border-t border-[hsl(215_50%_16%/0.25)] text-xs">
               <div className="p-4 border-r border-[hsl(215_50%_16%/0.25)]">
-                <div className="font-display text-2xl">2024</div>
+                <div className="font-display text-2xl">2023</div>
                 <div className="uppercase tracking-[0.18em] text-[10px] mt-1 text-[hsl(215_30%_35%)]">
                   Înființată
                 </div>
