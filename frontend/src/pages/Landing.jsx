@@ -2,6 +2,7 @@ import Navbar from "../components/site/Navbar";
 import Hero from "../components/site/Hero";
 import Ribbon from "../components/site/Ribbon";
 import About from "../components/site/About";
+import Members from "../components/site/Members";
 import Gallery from "../components/site/Gallery";
 import Socials from "../components/site/Socials";
 import ContactSection from "../components/site/ContactSection";
@@ -15,6 +16,7 @@ export default function Landing() {
         <Hero />
         <Ribbon />
         <About />
+        <Members />
         <Gallery />
         <Socials />
         <ContactSection />
