@@ -19,10 +19,10 @@ export default function Members() {
               <span className="stamp-tag">Membrii trupei</span>
             </div>
             <h2
-              className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight max-w-2xl"
+              className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight max-w-3xl"
               data-testid="members-title"
             >
-              Oamenii din <em className="italic">demisol</em>.
+              Și... cine face parte din <em className="italic">această trupă</em>?
             </h2>
           </div>
           <div className="text-sm uppercase tracking-[0.22em] font-semibold text-[hsl(215_30%_30%)]">
