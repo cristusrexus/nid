@@ -36,12 +36,24 @@ export default function About() {
             className="text-lg md:text-xl leading-relaxed text-[hsl(215_30%_25%)]"
             data-testid="about-paragraph-1"
           >
-            <span className="font-display text-3xl mr-2 float-left leading-none mt-1">N</span>
-            ote În Demisol este o trupă din Beclean, județul Bistrița-Năsăud,
-            înființată în 2023 de Alex Czirai, profesor de chitară și
-            coordonatorul trupei. Ne adunăm săptămânal în demisol pentru
-            repetiții, învățăm chitară împreună și urcăm pe scenă la evenimente
-            locale și concerte din împrejurimi.
+            <span className="font-display text-3xl mr-2 float-left leading-none mt-1">„</span>
+            Note în Demisol" este mai mult decât un grup de chitară. Este locul
+            unde muzica a adus împreună oameni care au crescut, au învățat și au
+            creat amintiri alături unii de alții. De la primele repetiții pline
+            de emoții până la concerte, drumuri, ieșiri și momente simple
+            petrecute împreună, totul a devenit parte dintr-o experiență care a
+            unit grupul ca o familie.
+          </p>
+          <p
+            className="text-base md:text-lg leading-relaxed text-[hsl(215_30%_28%)] mt-6"
+            data-testid="about-paragraph-2"
+          >
+            Pentru mulți, Note În Demisol este locul unde pot fi ei înșiși, unde
+            se simt acceptați și unde au prins curaj să evolueze atât muzical,
+            cât și personal. Nu este vorba doar despre a cânta la chitară, ci
+            despre prietenii, energie, susținere și bucuria de a împărți aceeași
+            pasiune. Fiecare repetiție, concert sau moment petrecut împreună a
+            lăsat în urmă amintiri care vor rămâne importante mult timp.
           </p>
 
           <div className="mt-10 border border-[hsl(215_50%_16%/0.18)] overflow-hidden" data-testid="about-group-photo">
