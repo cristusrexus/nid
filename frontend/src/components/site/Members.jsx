@@ -16,7 +16,7 @@ const members = [
   { id: 13, name: "Florean Iulia", role: "Chitară" },
   { id: 14, name: "Gaby Ilosvai", role: "Chitară & Cajon" },
   { id: 15, name: "Lucaciu Andreea", role: "Chitară" },
-  { id: 16, name: "Marcu Robert", role: "Chitară" },
+  { id: 16, name: "Mărcuș Robert", role: "Chitară" },
   { id: 17, name: "Maria Bărburaș", role: "Voce" },
   { id: 18, name: "Markus", role: "Chitară & Cajon" },
   { id: 19, name: "Maya Pop", role: "Chitară" },
